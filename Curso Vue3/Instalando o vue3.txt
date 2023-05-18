@@ -1,0 +1,45 @@
+Criando um aplicativo Vue​
+
+Pré-requisitos:
+
+Familiaridade com a linha de comando
+Instale o Node.js versão 16.0 ou superior
+
+Nesta seção, apresentaremos como criar um scaffold em um Vue Single Page Application em sua máquina local. O projeto criado usará uma configuração de compilação baseada no Vite e nos permitirá usar Vue Single-File Components (SFCs).
+
+Certifique-se de ter uma versão atualizada do Node.js instalada e execute o seguinte comando em sua linha de comando (sem o > sinal):
+
+> npm init vue@latest
+
+Este comando instalará e executará create-vue , a ferramenta oficial de scaffolding do projeto Vue. Você será presenteado com prompts para vários recursos opcionais, como TypeScript e suporte de teste:
+
+✔ Project name: … <your-project-name>
+✔ Add TypeScript? … No / Yes
+✔ Add JSX Support? … No / Yes
+✔ Add Vue Router for Single Page Application development? … No / Yes
+✔ Add Pinia for state management? … No / Yes
+✔ Add Vitest for Unit testing? … No / Yes
+✔ Add an End-to-End Testing Solution? … No / Cypress / Playwright
+✔ Add ESLint for code quality? … No / Yes
+✔ Add Prettier for code formatting? … No / Yes
+
+Scaffolding project in ./<your-project-name>...
+Done.
+
+Se você não tiver certeza sobre uma opção, basta escolher No pressionando Enter por enquanto. Uma vez criado o projeto, siga as instruções para instalar as dependências e iniciar o servidor de desenvolvimento:
+
+> cd <your-project-name>
+> npm install
+> npm run dev
+
+Agora você deve ter seu primeiro projeto Vue em execução! Observe que os componentes de exemplo no projeto gerado são gravados usando a API de composição e <script setup>, em vez da API de opções . Aqui estão algumas dicas adicionais:
+
+A configuração de IDE recomendada é Visual Studio Code + extensão Volar . Se você usa outros editores, confira a seção de suporte do IDE .
+Mais detalhes de ferramentas, incluindo integração com estruturas de back-end, são discutidos no Guia de ferramentas .
+Para saber mais sobre a ferramenta de construção subjacente Vite, confira os documentos do Vite .
+Se você optar por usar o TypeScript, consulte o Guia de uso do TypeScript .
+Quando estiver pronto para enviar seu aplicativo para produção, execute o seguinte:
+
+> npm run build
+
+Isso criará uma compilação pronta para produção do seu aplicativo no ./distdiretório do projeto. Confira o Guia de implantação de produção para saber mais sobre como enviar seu aplicativo para produção.
